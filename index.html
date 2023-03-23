@@ -2,9 +2,10 @@
 <html lang="en" manifest="cache.appcache">
 <head>
   <meta charset="utf-8">
-  <title>2048 AI</title>
+  <title>9007199254740992</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/others.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
@@ -14,7 +15,7 @@
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no" />
 
   <meta property="og:title" content="2048 AI"/>
@@ -26,7 +27,7 @@
   <script src="js/jquery-1.10.2.min.js"></script>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048 AI</h1>
+      <h1 class="title">9007199254740992 AI</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
@@ -52,8 +53,6 @@
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
@@ -64,8 +63,66 @@
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
         </div>
         <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
           <div class="grid-cell"></div>
@@ -101,6 +158,10 @@
       </div>
     </div>
 
+  <div class="auto-move-container">
+    <p><strong>Move randomly with </strong><input type="text" name="auto-move-time" value="" id="auto-move-input-time" onkeypress='return event.charCode >= 48 && event.charCode <= 57' size="6" maxlength="8"><strong> ms.</strong> <input type="submit" value="Run" id="auto-move-run" class="auto-move-button"> <input type="submit" value="Stop" id="auto-move-stop" class="auto-move-button"></p>
+  </div>
+
     <p class="game-explanation">
     Created by AJ Richardson. Based on <a href="http://gabrielecirulli.github.io/2048">2048 by Gabriele Cirulli</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer</a>.
     </p>
@@ -119,5 +180,12 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script src="js/auto_move.js"></script>
+  <!--<script>window.scrollTo(0,document.body.scrollHeight);</script>-->
+  <style>
+	hr.tw{
+		border-color: blue;
+	}
+  </style>
 </body>
 </html>
